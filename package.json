@@ -1,28 +1,37 @@
 {
   "name": "myrproducciones",
   "version": "1.0.0",
-  "description": "A simple HTML test site for Expresion 90.5 FM Radio",
+  "description": "A simple node-express website for MYR Producciones",
   "private": true,
+  "main": "index.js",
   "scripts": {
     "start": "node ./app"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/JonLemOfficial/myrproducciones.git"
+    "url": "git+https://github.com/JonLemOfficial/myrproducciones.git"
   },
-  "bugs": {
-    "url": "https://github.com/JonLemOfficial/myrproducciones/issues"
-  },
-  "homepage": "https://github.com/JonLemOfficial/myrproducciones#readme",
-  "keywords": [],
+  "keywords": [
+    "myr-test",
+    "myr-node",
+    "node-express-myr",
+    "myr-producciones"
+  ],
   "author": {
     "name": "Jonathan \"JonLem\" Lemos",
-    "mail": "jonlemofficial@hotmail.com",
+    "url": "https://jonlemofficial.com",
+    "email": "jonlemofficial@hotmail.com",
     "github": "https://github.com/JonLemOfficial",
     "twitter": "https://twitter.com/JonLemOfficial"
   },
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JonLemOfficial/myrproducciones/issues"
+  },
+  "homepage": "https://github.com/JonLemOfficial/myrproducciones#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "require-directory": "^2.1.1"
   }
 }
