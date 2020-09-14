@@ -1,0 +1,347 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<%- include('./_inc/head') %>
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<%- include('./_inc/header') %>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Interface gráfica</h2>
+							<p>Los elementos principales que componen el diseño de esta web</p>
+						</header>
+
+						<!-- Text -->
+							<section>
+								<h3>Texto</h3>
+								<p>Este es <b>Negrita</b>. Este es <i>Cursiva</i>.
+								Este es texto <sup>Superexpuesto</sup> y este <sub>Subexpuesto</sub>.
+								Este es <u>Subrayado</u> y este es código: <code>for (;;) { ... }</code>. Finalmente, este es un <a href="#">enlace</a>.</p>
+
+								<hr />
+
+								<header>
+									<h3>Encabezamiento con subtítulo</h3>
+									<p>Este es el subtítulo descriptivo</p>
+								</header>
+								<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+								<header>
+									<h4>Sub-encabezamiento con subtítulo</h4>
+									<p>Este es el otro subtítulo descriptivo</p>
+								</header>
+								<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+
+								<hr />
+
+								<h2>Encabezamiento de nivel 2</h2>
+								<h3>Encabezamiento de nivel 3</h3>
+								<h4>Encabezamiento de nivel 4</h4>
+								<h5>Encabezamiento de nivel 5</h5>
+								<h6>Encabezamiento de nivel 6</h6>
+
+								<hr />
+
+								<h4>Frase de bloque</h4>
+								<blockquote>
+									<p>Esta es una frase de bloque que expresa las palabras de un personaje reconocido en base a sus experiencias vividas. <br/>Un ejemplo de ellas son las lecciones de aprendizaje. <br/><br/><b>&quot;Jonathan &apos;JonLem&apos; Lemos&quot;</b></p>
+								</blockquote>
+
+								<h4>Texto pre-formado</h4>
+								<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+  print 'Iteration ' + i;
+  deck.shuffle();
+  i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';
+	</code></pre>
+							</section>
+							
+						<!-- Lists -->
+							<section>
+								<h3>Listas</h3>
+								<div class="row">
+									<div class="6u 12u(xsmall)">
+
+										<h4>Desordenada</h4>
+										<ul>
+											<li>Dolor pulvinar etiam magna etiam.</li>
+											<li>Sagittis adipiscing lorem eleifend.</li>
+											<li>Felis enim feugiat dolore viverra.</li>
+										</ul>
+
+										<h4>Alternada</h4>
+										<ul class="alt">
+											<li>Dolor pulvinar etiam magna etiam.</li>
+											<li>Sagittis adipiscing lorem eleifend.</li>
+											<li>Felis enim feugiat dolore viverra.</li>
+											<li>Lobortis adipiscing condimentum lorem.</li>
+											<li>Integer eleifend erat sed accumsan.</li>
+										</ul>
+
+									</div>
+									<div class="6u 12u(xsmall)">
+
+										<h4>Ordenada</h4>
+										<ol>
+											<li>Dolor pulvinar etiam magna etiam.</li>
+											<li>Etiam vel felis at lorem sed viverra.</li>
+											<li>Felis enim feugiat dolore viverra.</li>
+											<li>Dolor pulvinar etiam magna etiam.</li>
+											<li>Etiam vel felis at lorem sed viverra.</li>
+											<li>Felis enim feugiat dolore viverra.</li>
+										</ol>
+
+										<h4>Iconos</h4>
+										<h5>Rellenados</h5>
+										<ul class="icons">
+											<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+											<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+											<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+											<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+											<li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li>
+										</ul>
+										<h5>Sombreados</h5>
+										<ul class="icons">
+											<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+											<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+											<li><a href="#" class="icon alt fa-github"><span class="label">Github</span></a></li>
+											<li><a href="#" class="icon alt fa-dribbble"><span class="label">Dribbble</span></a></li>
+											<li><a href="#" class="icon alt fa-tumblr"><span class="label">Tumblr</span></a></li>
+										</ul>
+
+									</div>
+								</div>
+							</section>
+
+						<!-- Table -->
+							<section>
+								<h3>Tablas</h3>
+								<h4>Predeterminada</h4>
+								<div class="table-wrapper">
+									<table>
+										<thead>
+											<tr>
+												<th>Nombre</th>
+												<th>Descripción</th>
+												<th>Precio</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Item 1</td>
+												<td>Ante turpis integer aliquet porttitor.</td>
+												<td>29.99</td>
+											</tr>
+											<tr>
+												<td>Item 2</td>
+												<td>Vis ac commodo adipiscing arcu aliquet.</td>
+												<td>19.99</td>
+											</tr>
+											<tr>
+												<td>Item 3</td>
+												<td> Morbi faucibus arcu accumsan lorem.</td>
+												<td>29.99</td>
+											</tr>
+											<tr>
+												<td>Item 4</td>
+												<td>Vitae integer tempus condimentum.</td>
+												<td>19.99</td>
+											</tr>
+											<tr>
+												<td>Item 5</td>
+												<td>Ante turpis integer aliquet porttitor.</td>
+												<td>29.99</td>
+											</tr>
+										</tbody>
+										<tfoot>
+											<tr>
+												<td colspan="2"></td>
+												<td>100.00</td>
+											</tr>
+										</tfoot>
+									</table>
+								</div>
+								<h4>Alternada</h4>
+								<div class="table-wrapper">
+									<table class="alt">
+										<thead>
+											<tr>
+												<th>Nombre</th>
+												<th>Descripción</th>
+												<th>Precio</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Item 1</td>
+												<td>Ante turpis integer aliquet porttitor.</td>
+												<td>29.99</td>
+											</tr>
+											<tr>
+												<td>Item 2</td>
+												<td>Vis ac commodo adipiscing arcu aliquet.</td>
+												<td>19.99</td>
+											</tr>
+											<tr>
+												<td>Item 3</td>
+												<td> Morbi faucibus arcu accumsan lorem.</td>
+												<td>29.99</td>
+											</tr>
+											<tr>
+												<td>Item 4</td>
+												<td>Vitae integer tempus condimentum.</td>
+												<td>19.99</td>
+											</tr>
+											<tr>
+												<td>Item 5</td>
+												<td>Ante turpis integer aliquet porttitor.</td>
+												<td>29.99</td>
+											</tr>
+										</tbody>
+										<tfoot>
+											<tr>
+												<td colspan="2"></td>
+												<td>100.00</td>
+											</tr>
+										</tfoot>
+									</table>
+								</div>
+							</section>
+
+						<!-- Buttons -->
+							<section>
+								<h3>Botones</h3>
+								<ul class="actions">
+									<li><a href="#" class="button special">Especial</a></li>
+									<li><a href="#" class="button">Normal</a></li>
+								</ul>
+								<ul class="actions">
+									<li><a href="#" class="button special big">Grande</a></li>
+									<li><a href="#" class="button">Normal</a></li>
+									<li><a href="#" class="button small">Pequeño</a></li>
+								</ul>
+								<div class="row">
+									<div class="6u 12u$(xsmall)">
+										<ul class="actions fit">
+											<li><a href="#" class="button special fit">Flexible</a></li>
+											<li><a href="#" class="button fit">Flexible</a></li>
+										</ul>
+									</div>
+									<div class="6u$ 12u$(xsmall)">
+										<ul class="actions fit small">
+											<li><a href="#" class="button special fit small">Flexible + Pequeño</a></li>
+											<li><a href="#" class="button fit small">Flexible + Pequeño</a></li>
+										</ul>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><a href="#" class="button special icon fa-download">Icono</a></li>
+									<li><a href="#" class="button icon fa-download">Icono</a></li>
+								</ul>
+								<ul class="actions">
+									<li><span class="button special disabled">Desactivado</span></li>
+									<li><span class="button disabled">Desactivado</span></li>
+								</ul>
+							</section>
+
+						<!-- Form -->
+							<section>
+								<h3>Formularios</h3>
+								<form method="post" action="#">
+									<div class="row uniform 50%">
+										<div class="6u 12u$(xsmall)">
+											<input type="text" name="name" id="name" value="" placeholder="Nombre" />
+										</div>
+										<div class="6u$ 12u$(xsmall)">
+											<input type="email" name="email" id="email" value="" placeholder="Correo" />
+										</div>
+										<div class="12u$">
+											<div class="select-wrapper">
+												<select name="category" id="category">
+													<option value="">- Categoría -</option>
+													<option value="1">Manufactura</option>
+													<option value="1">Envio</option>
+													<option value="1">Administración</option>
+													<option value="1">Recursos humanos</option>
+												</select>
+											</div>
+										</div>
+										<div class="4u 12u$(medium)">
+											<input type="radio" id="priority-low" name="priority" checked>
+											<label for="priority-low">Prioridad Baja</label>
+										</div>
+										<div class="4u 12u$(medium)">
+											<input type="radio" id="priority-normal" name="priority">
+											<label for="priority-normal">Prioridad Normal</label>
+										</div>
+										<div class="4u$ 12u$(medium)">
+											<input type="radio" id="priority-high" name="priority">
+											<label for="priority-high">Prioridad Alta</label>
+										</div>
+										<div class="6u 12u$(medium)">
+											<input type="checkbox" id="copy" name="copy">
+											<label for="copy">Enviarme una copia de este mensaje</label>
+										</div>
+										<div class="6u$ 12u$(medium)">
+											<input type="checkbox" id="human" name="human" checked>
+											<label for="human">No soy un robot</label>
+										</div>
+										<div class="12u$">
+											<textarea name="message" id="message" placeholder="Escriba su mensaje" rows="6"></textarea>
+										</div>
+										<div class="12u$">
+											<ul class="actions">
+												<li><input type="submit" value="Enviar mensaje" class="special" /></li>
+												<li><input type="reset" value="Reiniciar" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</section>
+
+						<!-- Image -->
+							<section>
+								<h3>Imagenes</h3>
+								<h4>Flexible</h4>
+								<div class="box alt">
+									<div class="row 50% uniform">
+										<div class="12u$"><span class="image fit"><img src="images/pic07.jpg" alt="" /></span></div>
+										<div class="4u  6u$(xsmall)"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+										<div class="4u  6u(xsmall)"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+										<div class="4u$ 6u$(xsmall)"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+										<div class="4u  6u(xsmall)"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+										<div class="4u  6u$(xsmall)"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+										<div class="4u$ 6u(xsmall)"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+										<div class="4u  6u$(xsmall)"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+										<div class="4u  6u(xsmall)"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+										<div class="4u$ 6u$(xsmall)"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+									</div>
+								</div>
+
+								<h4>Izquierda &amp; Derecha</h4>
+								<p><span class="image left"><img src="images/pic08.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Cras aliquet accumsan curae accumsan arcu amet egestas placerat odio morbi mi adipiscing col morbi felis faucibus in gravida sollicitudin interdum commodo. Ante aliquam vis iaculis accumsan lorem ipsum dolor sit amet nullam. Cras aliquet accumsan curae accumsan arcu amet egestas placerat odio morbi mi adipiscing col morbi felis faucibus in gravida sollicitudin interdum commodo. Ante aliquam vis iaculis accumsan lorem ipsum dolor sit amet nullam.</p>
+								<p><span class="image right"><img src="images/pic08.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Cras aliquet accumsan curae accumsan arcu amet egestas placerat odio morbi mi adipiscing col morbi felis faucibus in gravida sollicitudin interdum commodo. Ante aliquam vis iaculis accumsan lorem ipsum dolor sit amet nullam. Cras aliquet accumsan curae accumsan arcu amet egestas placerat odio morbi mi adipiscing col morbi felis faucibus in gravida sollicitudin interdum commodo. Ante aliquam vis iaculis accumsan lorem ipsum dolor sit amet nullam.</p>
+							</section>
+
+					</div>
+				</div>
+
+			<!-- Footer -->
+			<%- include('./_inc/footer') %>
+		</div>
+
+		<!-- Scripts -->
+		<%- include('./_inc/scripts') %>
+	</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <%- include('./../_inc/head') %>
+  </head>
+  <body>
+    <div id="page-wrapper">
+
+      <!-- Header -->
+      <%- include('./../_inc/header') %>
+
+      <div class="row">
+        <div class="12u$(medium)">
+
+        <!-- Sidebar -->
+          <section id="sidebar">
+            <h3 align="center">Registro</h3>
+            <span class="image">
+                <img style="width: 180px; height: 180px" src="images/pic01.png" alt="MYR-logo" />
+            </span>
+          </section>
+        </div>
+
+        <div class="8u$ 12u$(medium) important(medium)">
+          <form action="#" method="post" id="sidebar">
+            <div class="row uniform">
+              <div class="12u$">
+                <input type="text" name="name" id="name" value="" placeholder="nombre" />
+              </div>
+              <div class="12u$">
+                <input type="text" name="lastname" id="lastname" value="" placeholder="apellido" />
+              </div>
+              <div class="12u$">
+                <input type="text" name="username" id="username" value="" placeholder="@usuario" />
+              </div>
+              <div class="12u$">
+                <input type="email" name="email" id="email" value="" placeholder="correo" />
+              </div>
+              <div class="12u$">
+                <input type="password" name="password" id="password" value="" placeholder="contraseña" />
+              </div>
+              <div class="12u$">
+                <input type="password" name="password-rpt" id="password-rpt" value="" placeholder="confirmar contraseña" />
+              </div>
+              <div>
+                <input type="checkbox" id="copy" name="copy">
+                <label for="copy">He leido y acepto los <a href="#">términos y condiciones</a></label>
+              </div>
+              <div class="12u$">
+                <ul class="actions">
+                  <li><button type="submit" class="special">Registrarse</button></li>
+                  <li><button type="reset" class="small" title="Reiniciar formulario"><span class="icon fa-repeat"></span></button></li>
+                </ul>
+              </div>
+              <div>
+                <p>Ya registrado?, <a href="/login">Inicie sesión</a>.</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <%- include('./../_inc/footer') %>
+
+      </div>
+
+    <!-- Scripts -->
+    <%- include('./../_inc/scripts') %>
+  </body>
+</html>

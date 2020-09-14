@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<%- include('./../_inc/head') %>
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<%- include('./../_inc/header', {sesion: true, register: true}) %>
+
+			<div id="main" class="wrapper style1">
+				<div class="container">
+					<div class="table-wrapper">
+						<h3 align="center">Peticiones del cliente (atributos `req`)</h3>
+						<table class="alt">
+							<thead>
+									<tr>
+										<th>Nombre</th>
+										<th>Tipo</th>
+										<th>Valor</th>
+									</tr>
+							</thead>
+							<tbody>
+								<% Object.keys(obj)
+								.forEach(function(prop) { %>
+									<tr>
+										<td><%= prop %></td>
+										<td><%= typeof obj[prop] %></td>
+										<td><%= (typeof obj[prop] !== 'object' && typeof obj[prop] !== 'function') ? obj[prop] : Array.isArray(obj[prop]) ? '[array]' : '[object]' %></td>
+									</tr>
+								<% }) %>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="2"></td>
+									<td>Total: <%= Object.keys(obj).length %></td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<!-- Footer -->
+			<%- include('./../_inc/footer') %>
+
+		</div>
+
+		<!-- Scripts -->
+		<%- include('./../_inc/scripts') %>
+
+	</body>
+</html>

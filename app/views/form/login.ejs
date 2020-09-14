@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <%- include('./../_inc/head') %>
+  </head>
+  <body>
+    <div id="page-wrapper">
+
+      <!-- Header -->
+      <%- include('./../_inc/header') %>
+
+      <!-- LoginForm -->
+        <section class="wrapper center">
+          <div id="main">
+            <h3>Iniciar sesión</h3>
+            <span class="image">
+                <img style="width: 180px; height: 180px;" src="images/pic01.png" alt="MYR-logo" />
+              </span>
+            <form action="#" method="post">
+              <div class="row uniform">
+                <div class="12u$">
+                  <input type="text" name="username" id="username" value="" placeholder="@usuario, correo, #teléfono" />
+                </div>
+                <div class="12u$">
+                  <input type="password" name="pwd" id="pwd" value="" placeholder="contraseña" />
+                </div>
+                <div class="12u$">
+                  <ul class="actions">
+                    <li><button type="submit" class="special">Entrar</button></li>
+                    <li><button type="reset" class="small" title="Reiniciar formulario"><span class="icon fa-repeat"></span></button></li>
+                  </ul>
+                </div>
+                <div>
+                  <input type="checkbox" id="copy" name="copy">
+                  <label for="copy">Recordarme (mantener mi sesión iniciada)</label>
+                </div>
+                <div>
+                  <p>Olvido la contraseña?, <a href="/forgot">reestablezcala aquí</a></p>
+                </div>
+                <div>
+                  <p>Primera vez aquí?, <a href="/register">registrese hoy!!!</a></p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+
+
+      <!-- Footer -->
+      <%- include('./../_inc/footer') %>
+
+      </div>
+
+    <!-- Scripts -->
+    <%- include('./../_inc/scripts') %>
+  </body>
+</html>

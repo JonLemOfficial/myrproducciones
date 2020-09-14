@@ -1,0 +1,32 @@
+<header id="header">
+  <h1 id="logo"><a href="/">MYR Producciones</a></h1>
+  <nav id="nav">
+    <ul>
+      <li><a href="/">Inicio</a></li>
+      <li>
+        <a href="#">Diseños</a>
+        <ul>
+          <li><a href="/sidebar?s=l">Barra izquierda</a></li>
+          <li><a href="/sidebar?s=r">Barra derecha</a></li>
+          <li><a href="/sidebar">Sin barra</a></li>
+          <li><a href="#" class="button special icon fa-arrow-left">Submenu social</a>
+            <ul>
+              <li><a href="https://www.facebook.com/myrproduccioness"><span class="icon fa-facebook">&nbsp;Facebook</span></a></li>
+              <li><a href="https://www.twitter.com/myrproduccione2"><span class="icon fa-twitter">&nbsp;Twitter</span></a></li>
+              <li><a href="https://www.instagram.com/myrproducciones"><span class="icon fa-instagram">&nbsp;Instagram</span></a></li>
+              <li><a href="mailto:myrproducciones20@gmail.com"><span class="icon fa-envelope">&nbsp;Mail</span></a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="/interface">Interface</a></li>
+      <% if (sesion) { %>
+        <li><a href="/login" class="button">Iniciar Sesión</a></li>
+      <% } %>
+
+      <% if (register) { %>
+        <li><a href="/register" class="button special">Registrarse</a></li>
+      <% } %>
+    </ul>
+  </nav>
+</header>

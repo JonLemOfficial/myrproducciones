@@ -2,36 +2,37 @@
 
 const express = require('express');
 const path = require("path");
+const router = require("./router")
 
 // default constants
 const ROOT_DIR = path.join(__dirname, "..", "public");
+const TEMPLATES_DIR = path.join(__dirname, "views");
 
 const app = express();
 
 function main(argv) {
 
+  argv = argv.slice(2);
+
   app
-    // enable main public directory for user requests
-    .use(express.static(ROOT_DIR))
-    
-    // main port which app will be listening
+    // listening port
     .set('port', (process.env.PORT || process.argv[2] || 8000))
 
-    // paths
-    .get("/", function (req, res) {
-      res.sendFile(path.join(ROOT_DIR, "index.html"));
-    })
+    // views directory
+    .set("views", TEMPLATES_DIR)
 
-    // set 404 error pages for undefined routes  
-    .get("*", function(req, res) {
-      res
-        .status(404)
-        .sendFile(path.join(ROOT_DIR, "404.html"));
-    })
+    // template engine
+    .set("view engine", "ejs")
+    
+    // static files
+    .use(express.static(ROOT_DIR))
 
-    // enable port and init the server
+    // web routes
+    .use(router)
+
+    // enable port and run server
     .listen(app.get("port"), () => {
-      console.log(`Server running at: "http://localhost:${ app.get("port") }"`)
+      console.log(`Server running at: "http://localhost:${app.get("port")}"`)
     });
 }
 
